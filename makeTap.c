@@ -1076,6 +1076,35 @@ void colorChangeItemTap(int i) {
         SetCurrentCursorPos(47, 56);
         printf("%d 개", itemList[4]);
     }
+    else if (i == 8) {
+    Colorset(black, white);
+    drawBox(10, 45, 16, 6);
+    SetCurrentCursorPos(13, 47);
+    printf("가짜기름유포");
+    SetCurrentCursorPos(17, 49);
+    printf("%d 개", itemList[0]);
+    drawBox(30, 45, 16, 6);
+    SetCurrentCursorPos(35, 47);
+    printf("긴급회복");
+    SetCurrentCursorPos(37, 49);
+    printf("%d 개", itemList[1]);
+    drawBox(50, 45, 16, 6);
+    SetCurrentCursorPos(54, 47);
+    printf("속도 최대");
+    SetCurrentCursorPos(57, 49);
+    printf("%d 개", itemList[2]);
+    drawBox(20, 52, 16, 6);
+    SetCurrentCursorPos(25, 54);
+    printf("어    뢰");
+    SetCurrentCursorPos(27, 56);
+    printf("%d 개", itemList[3]);
+    Colorset(black, sky);
+    drawBox(40, 52, 16, 6);
+    SetCurrentCursorPos(45, 54);
+    printf("인 질 극");
+    SetCurrentCursorPos(47, 56);
+    printf("%d 개", itemList[4]);
+    }
     Colorset(black, white);
 }
 
