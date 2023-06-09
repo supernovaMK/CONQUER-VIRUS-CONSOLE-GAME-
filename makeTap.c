@@ -1179,6 +1179,23 @@ void selectedTap(int i) {
         SetCurrentCursorPos(59, 43);
         printf("아이템");
     }
+    else if (i == 8) {
+        removeTap();
+        Colorset(black, white);
+        drawBox(10, 42, 12, 2);
+        SetCurrentCursorPos(13, 43);
+        printf("바이러스");
+        drawBox(25, 42, 12, 2);
+        SetCurrentCursorPos(28, 43);
+        printf("감염경로");
+        drawBox(40, 42, 12, 2);
+        SetCurrentCursorPos(43, 43);
+        printf("배 강화");
+        Colorset(black, brightYellow);
+        drawBox(55, 42, 12, 2);
+        SetCurrentCursorPos(59, 43);
+        printf("아이템");
+    }
     Colorset(black, white);
 }
 
