@@ -788,7 +788,144 @@ void colorChangeRouteTap(int i) {
     }
 }
 
+void colorChangeShipTap(int i) {
+    removeTap();
+    if (i == 0) {
+        Colorset(black, sky);
+        drawBox(10, 47, 16, 6);
+        SetCurrentCursorPos(17, 48);
+        if (st.power != 10)
+            printf("%d G", goldPower[st.power]);
+        else
+            printf("불가");
+        SetCurrentCursorPos(15, 50);
+        printf("공 격 력");
+        SetCurrentCursorPos(16, 52);
+        if (st.power != 10)
+            printf("Lv. %d", st.power);
+        else
+            printf("Lv. MAX");
+        Colorset(black, white);
+        drawBox(30, 47, 16, 6);
+        SetCurrentCursorPos(37, 48);
+        if (st.health != 10)
+            printf("%d G", goldHealth[st.health]);
+        else
+            printf("불가");
+        SetCurrentCursorPos(35, 50);
+        printf("내 구 력");
+        SetCurrentCursorPos(36, 52);
+        if (st.health != 10)
+            printf("Lv. %d", st.health);
+        else
+            printf("Lv. MAX");
+        drawBox(50, 47, 16, 6);
+        SetCurrentCursorPos(57, 48);
+        if (st.speed != 5)
+            printf("%d G", goldSpeed[st.speed]);
+        else
+            printf("불가");
+        SetCurrentCursorPos(56, 50);
+        printf("속 도");
+        SetCurrentCursorPos(56, 52);
+        if (st.speed != 5)       //최고 레벨이 아니면
+            printf("Lv. %d", st.speed);     //스피드 고정
+        else {
+            printf("Lv. MAX");
+        }
+    }
+    else if (i == 1) {
+        Colorset(black, white);
+        drawBox(10, 47, 16, 6);
+        SetCurrentCursorPos(17, 48);
+        if (st.power != 10)
+            printf("%d G", goldPower[st.power]);
+        else
+            printf("불가");
+        SetCurrentCursorPos(15, 50);
+        printf("공 격 력");
+        SetCurrentCursorPos(16, 52);
+        if (st.power != 10)
+            printf("Lv. %d", st.power);
+        else
+            printf("Lv. MAX");
+        Colorset(black, sky);
+        drawBox(30, 47, 16, 6);
+        SetCurrentCursorPos(37, 48);
+        if (st.health != 10)
+            printf("%d G", goldHealth[st.health]);
+        else
+            printf("불가");
+        SetCurrentCursorPos(35, 50);
+        printf("내 구 력");
+        SetCurrentCursorPos(36, 52);
+        if (st.health != 10)
+            printf("Lv. %d", st.health);
+        else
+            printf("Lv. MAX");
+        Colorset(black, white);
+        drawBox(50, 47, 16, 6);
+        SetCurrentCursorPos(57, 48);
+        if (st.speed != 5)
+            printf("%d G", goldSpeed[st.speed]);
+        else
+            printf("불가");
+        SetCurrentCursorPos(56, 50);
+        printf("속 도");
+        SetCurrentCursorPos(56, 52);
+        if (st.speed != 5)       //최고 레벨이 아니면
+            printf("Lv. %d", st.speed);     //스피드 고정
+        else {
+            printf("Lv. MAX");
+        }
+    }
+    else if (i == 2) {
+        Colorset(black, white);
+        drawBox(10, 47, 16, 6);
+        SetCurrentCursorPos(17, 48);
+        if (st.power != 10)
+            printf("%d G", goldPower[st.power]);
+        else
+            printf("불가");
+        SetCurrentCursorPos(15, 50);
+        printf("공 격 력");
+        SetCurrentCursorPos(16, 52);
+        if (st.power != 10)
+            printf("Lv. %d", st.power);
+        else
+            printf("Lv. MAX");
+        drawBox(30, 47, 16, 6);
+        SetCurrentCursorPos(37, 48);
+        if (st.health != 10)
+            printf("%d G", goldHealth[st.health]);
+        else
+            printf("불가");
+        SetCurrentCursorPos(35, 50);
+        printf("내 구 력");
+        SetCurrentCursorPos(36, 52);
+        if (st.health != 10)
+            printf("Lv. %d", st.health);
+        else
+            printf("Lv. MAX");
+        Colorset(black, sky);
+        drawBox(50, 47, 16, 6);
+        SetCurrentCursorPos(57, 48);
+        if (st.speed != 5)
+            printf("%d G", goldSpeed[st.speed]);
+        else
+            printf("불가");
+        SetCurrentCursorPos(56, 50);
+        printf("속 도");
+        SetCurrentCursorPos(56, 52);
+        if (st.speed != 5)       //최고 레벨이 아니면
+            printf("Lv. %d", st.speed);     //스피드 고정
+        else {
+            printf("Lv. MAX");
+        }
+    }
+    Colorset(black, white);
 
+}
 void colorChangeItemTap(int i) {
     removeTap();
     if (i == 0) {
