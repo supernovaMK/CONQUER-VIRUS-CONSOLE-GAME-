@@ -50,6 +50,13 @@ struct itemTap2 {
 	int engine;
 	int hostage;
 };
+struct itemTap3 {
+	int oil;
+	int jamming;
+	int toground;
+	int engine;
+	int hostage;
+};
 struct virusTap vt;
 struct shipTap st;
 struct routeTap rt;
