@@ -1662,6 +1662,25 @@ void showVaccineBar()
     }
 }
 
+void showVaccineBar2()
+{
+    updateBar();
+    COORD curPos = { 0,1 };
+    for (int i = 0; i < BAR_WIDTH - 1; i++)
+    {
+        SetCurrentCursorPos(curPos.X + (i + 1) * 2, curPos.Y);
+        if (vaccineMaturity[0][i] == 0) {
+            Colorset(black, white);
+            printf("  ");
+        }
+        else if (vaccineMaturity[0][i] == 1)
+        {
+            Colorset(white, white);
+            printf("бс");
+        }
+    }
+}
+
 void printPer()
 {
     Colorset(black, green);
