@@ -1172,7 +1172,7 @@ void selectedTap(int i) {
         SetCurrentCursorPos(28, 43);
         printf("감염경로");
         drawBox(40, 42, 12, 2);
-        SetCurrentCursorPos(43, 43);
+        SetCurrentCursorPos(43, 43);    
         printf("배 강화");
         Colorset(black, brightYellow);
         drawBox(55, 42, 12, 2);
@@ -1572,6 +1572,36 @@ void printLogEx() {
 }
 
 void printuserInformation() {
+    SetCurrentCursorPos(156, 27);
+    Colorset(black, white);
+    printf("현재 배 체력 :");
+    SetCurrentCursorPos(170, 27);
+    printf("                           ");
+    SetCurrentCursorPos(170, 27);
+    Colorset(black, brightYellow);
+    printf("%d / %d", head->next->health, head->next->maxhp);
+
+    SetCurrentCursorPos(156, 30);
+    if (itemwork[2] == 1 && vt.min - itemstart2 <= 60) {
+        Colorset(black, white);
+        printf("속도 최대 아이템 사용중");
+        Colorset(black, brightYellow);
+        SetCurrentCursorPos(179, 30);
+        printf("%d분 남았습니다.", (int)(120 - (vt.min - itemstart2)) / 4);
+    }
+    else printf("                                       ");
+
+    SetCurrentCursorPos(156, 31);
+    if (itemwork[4] == 1 && vt.min - itemstart4 <= 500) {
+        Colorset(black, white);
+        printf("인질극 아이템 사용중");
+        Colorset(black, brightYellow);
+        SetCurrentCursorPos(178, 31);
+        printf("%d분 남았습니다.", (int)(500 - (vt.min - itemstart4)) / 4);
+    }
+    else printf("                                       ");
+}
+void printuserInformation2() {
     SetCurrentCursorPos(156, 27);
     Colorset(black, white);
     printf("현재 배 체력 :");
