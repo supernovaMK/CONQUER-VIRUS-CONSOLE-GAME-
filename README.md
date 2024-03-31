@@ -1,24 +1,24 @@
-# 바이러스 게임 conquer
+# Virus Game conquer
 
-## 설치 방법
-release되어 있는 v.1.0.0 버전에 있는 파일을 다운 후에 컴파일 해준다.
+## How to Install
+You must download the files in the released v.1.0.0 version.
 
-모니터 크기에서 차이나는 오류가 생길 수 있다. 이때 콘솔 창 설정에 들어가서 가로 세로 길이를 200 60으로 설정해주어야 한다.
+Monitor sizes may vary. The console window settings have the opposite length set to 200 60.
 
-## 모니터 설정
+## Monitor Setting
 
-모니터 설정에 관해서 어려움을 겪을 수 있을 경우 따로 contributor를 연락하여 교류를 지향한다.
+If you encounter difficulties with monitor settings, contact the contributor separately and pursue exchanges.
 
-## 게임 테마
-게임의 목적은 모든 지도에 있는 땅을 감염 시키는 것으로 감염도가 100%가 되었을 상황을 목표로 하여 게임을 진행한다.
+## Game Thema
 
-백신 개발에 맞서 시간이 지나면서 생성되는 백신 과의 승부를 보며 백신이 완성 되기 전에 다양한 전략으로 게임을 이겨야한다.
+The purpose of the game is to infect all lands on the map, and the game is played with the goal of reaching a 100% infection rate.
 
-### 게임 키
+Against vaccine development, you must win the game with various strategies before the vaccine is completed by competing against vaccines that are created over time.
 
-게임 키에는 기본적으로 상하좌우의 방향키를 이용하여 게임을 플레이하여 배를 움직인다.
+### How To Game 
+Basically use the up, down, left, and right arrow keys to play the game and move the ship.
 
-### 게임 소개
+### Game Introduction (Korean)
 ![image](https://github.com/supernovaMK/conquer_game/assets/115217054/a1dbcfdf-0cc0-43df-92ae-d7b4cbc15e6f)
 ![image](https://github.com/supernovaMK/conquer_game/assets/115217054/c1d2b872-2625-4028-bb12-8fedc630341a)
 ![image](https://github.com/supernovaMK/conquer_game/assets/115217054/8e2db7b0-f89d-43f8-88a0-8b8114aa89ca)
